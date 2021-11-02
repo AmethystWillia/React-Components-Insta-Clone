@@ -33,7 +33,7 @@ const App = () => {
         - otherwise just return the post object unchanged.
      */
     return setPosts(posts.map(item => {
-      return item.id === postId ? { ... item, likes: (item.likes + 1) } : posts;
+      return item.id === postId ? { ...item, likes: (item.likes + 1) } : item;
     }));
   };
 
